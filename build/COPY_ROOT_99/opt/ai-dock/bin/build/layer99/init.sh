@@ -65,3 +65,9 @@ rm -rf /tmp/*
 
 rm /etc/ld.so.cache
 ldconfig
+
+cd /root
+sudo wget https://github.com/pinokiocomputer/pinokio/releases/download/2.14.3/Pinokio-2.14.3.AppImage --output-document=/root/Pinokio-2.14.3.AppImage
+sudo chmod a+x /root/Pinokio-2.14.3.AppImage
+cd /root/
+sudo ./Pinokio-2.14.3.AppImage --no-sandbox
